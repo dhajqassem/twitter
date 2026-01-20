@@ -1,0 +1,155 @@
+twitter-login/
+ ├── index.html
+ ├── style.css
+ ├── google.png
+ └── apple.png
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-box">
+
+  <h1>Sign in to Twitter</h1>
+
+  <!-- Google Button -->
+  <div class="social-box">
+    <img src="google.png" alt="Google">
+    <span>Sign in with Google</span>
+  </div>
+
+  <!-- Apple Button -->
+  <div class="social-box">
+    <img src="apple.png" alt="Apple">
+    <span>Sign in with Apple</span>
+  </div>
+
+  <!-- OR line -->
+  <div class="or-box">
+    <div class="line"></div>
+    <p>or</p>
+    <div class="line"></div>
+  </div>
+
+  <!-- Input -->
+  <input type="text" placeholder="Phone, email, or username">
+
+  <!-- Next Button -->
+  <button class="next-btn">Next</button>
+
+  <!-- Forgot -->
+  <button class="forgot-btn">Forgot password?</button>
+
+  <!-- Signup -->
+  <p class="signup-text">
+    Don't have an account? <a href="#">Sign up</a>
+  </p>
+
+</div>
+
+</body>
+</html>
+body {
+  background: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Center Box */
+
+.main-box {
+  width: 350px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+/* Title */
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* Social Login Boxes */
+
+.social-box {
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.social-box img {
+  width: 20px;
+}
+
+/* OR Section */
+
+.or-box {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.line {
+  height: 1px;
+  background: #ddd;
+  flex: 1;
+}
+
+.or-box p {
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+/* Input */
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+
+.next-btn {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.forgot-btn {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Signup Text */
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
